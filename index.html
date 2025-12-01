@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site Under Construction</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="We're building something great. Coming soon!">
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <div class="logo" aria-hidden="true">
+        <!-- simple svg logo -->
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo">
+          <rect x="1" y="1" width="22" height="22" rx="4" stroke="currentColor" stroke-width="1.2" fill="none"/>
+          <path d="M6 15L10 9L14 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <h1>We're building something awesome</h1>
+      <p class="lead">Our website is currently under construction. We'll be back soon with something amazing.</p>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><span id="d">--</span><small>days</small></div>
+        <div><span id="h">--</span><small>hours</small></div>
+        <div><span id="m">--</span><small>minutes</small></div>
+        <div><span id="s">--</span><small>seconds</small></div>
+      </div>
+
+      <form id="notifyForm" class="notify" onsubmit="return handleNotify(event)">
+        <label for="email">Get notified when we're live</label>
+        <div class="row">
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <button type="submit">Notify me</button>
+        </div>
+        <p id="msg" class="msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="foot">Meanwhile, follow us on <a href="#" aria-label="Twitter">Twitter</a> or <a href="#" aria-label="LinkedIn">LinkedIn</a>.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
